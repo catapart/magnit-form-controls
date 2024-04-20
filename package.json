@@ -1,13 +1,13 @@
 {
-  "name": "my-package",
+  "name": "magnit-form-controls",
   "license": "CCO-1.0",
   "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
-    "release": "pnpm run build && changeset publish",
+    "build": "tsup index.ts --format cjs,esm --dts --clean",
+    "release": "tsup index.ts --format cjs,esm --dts && changeset publish",
     "lint": "tsc"
   },
   "devDependencies": {
